@@ -2,44 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-10">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
+
+    <title>MarvelPedia</title>
+    <!-- <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MCU</title>
+    <meta charset="utf-10"> -->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>INICIO</li>
-                <li>SINOPSIS MCU</li>
-                <li>CURIOSIDADES</li>
-            </ul>
-        </nav>
+    <header class="row center-xs">
+        <div class="col-xs-12">
+            <div class="header">
+                <nav>
+                    <ul class="menu">
+                        <div class="col-xs-2">
+                            <img class="image" src="../GDL002-hackathon-interna/img/logo-bc.png" alt="">
+                        </div>
+                        <li> <a href="#" id="moviesPage"> Movies</a></li>
+                        <li> <a href="#" id="storyPage"> MCU Story</a></li>
+                        <li> <a href="#" id="suitesPage"> Super Suits</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
-    <div id="container">
+    <div id="indexContainer">
         <h1>¿Cómo ver las películas del MCU?</h1>
-        <select name="actors" id="actors">
-            <option value="">Select an actor</option>
-            <option value="Robert Downey Jr.">Robert Downey Jr.</option>
-            <option value="Chris Evans">Chris Evans</option>
-            <option value="Chris Hemsworth">Chris Hemsworth</option>
-            <option value="Mark Ruffalo">Mark Ruffalo</option>
-            <option value="Benedict Cumberbatch">Benedict Cumberbatch</option>
-            <option value="Chadwick Boseman">Chadwick Boseman</option>
-            <option value="Tom Holland">Tom Holland</option>
-            <option value="Zoe Saldana">Zoe Saldaña</option>
-            <option value="Dave Bautista">Dave Bautista</option>
-            <option value="Chris Pratt">Chris Pratt</option>
-            <option value="Vin Diesel">Vin Diesel</option>
-            <option value="Paul Rudd">Paul Rudd</option>
-            <option value="Evangeline Lilly">Evangeline Lilly</option>
-            <option value="Brie Larson">Brie Larson</option>
-            <option value="Jude Law">Jude Law</option>
-        </select>
+        <div class="select">
+            <select name="actors" id="actors">
+                <option value="">Select an actor</option>
+                <option value="Robert Downey Jr.">Robert Downey Jr.</option>
+                <option value="Chris Evans">Chris Evans</option>
+                <option value="Chris Hemsworth">Chris Hemsworth</option>
+                <option value="Mark Ruffalo">Mark Ruffalo</option>
+                <option value="Benedict Cumberbatch">Benedict Cumberbatch</option>
+                <option value="Chadwick Boseman">Chadwick Boseman</option>
+                <option value="Tom Holland">Tom Holland</option>
+                <option value="Zoe Saldana">Zoe Saldaña</option>
+                <option value="Dave Bautista">Dave Bautista</option>
+                <option value="Chris Pratt">Chris Pratt</option>
+                <option value="Vin Diesel">Vin Diesel</option>
+                <option value="Paul Rudd">Paul Rudd</option>
+                <option value="Evangeline Lilly">Evangeline Lilly</option>
+                <option value="Brie Larson">Brie Larson</option>
+                <option value="Jude Law">Jude Law</option>
+            </select>
+        </div>
         <div id="moviesDiv"> </div>
     </div>
+    <section id="modal">
+        <article id="modalContainer">
+        </article>
+    </section>
 
     <script src="main.js"></script>
 </body>
