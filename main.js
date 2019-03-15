@@ -68,4 +68,10 @@ async function displayFilteredMovies(character) {
     }
 };
 // displayFilteredMovies("Mark Ruffalo");
+const selectActor = () => {
+    let select = document.getElementById("actors");
+    let selectedValue = select.value;
+    displayFilteredMovies(selectedValue);
+}
 
+document.getElementById("actors").addEventListener("change", selectActor);
