@@ -20,35 +20,25 @@
     </header>
     <div id="container">
         <h1>¿Cómo ver las películas del MCU?</h1>
-        <select name="actors" id="actorsSelect">
-            <option value="">Robert Downey Jr.</option>
-            <option value="">Chris Evans</option>
-            <option value="">Scarlett Johansson</option>
-            <option value="">Chris Hemsworth</option>
-            <option value="">Mark Ruffalo</option>
-            <option value="">Samuel L. Jackson</option>
-            <option value="">Jeremy Renner</option>
-            <option value="">Anthony Mackie</option>
-            <option value="">Benedict Cumberbatch</option>
-            <option value="">Josh Brolin</option>
-            <option value="">Chadwick Boseman</option>
-            <option value="">Tom Holland</option>
-            <option value="">Paul Bettany</option>
-            <option value="">Karen Gillan</option>
-            <option value="">Zoe Saldaña</option>
-            <option value="">Dave Bautista</option>
-            <option value="">Chris Pratt</option>
-            <option value="">Bradley Cooper</option>
-            <option value="">Vin Diesel</option>
-            <option value="">Michael Rooker</option>
-            <option value="">Paul Rudd</option>
-            <option value="">Evangeline Lilly</option>
-            <option value="">Tilda Swinton</option>
-            <option value="">Brie Larson</option>
-            <option value="">Jude Law</option>
-            <option value="">Lashana Lynch</option>
+        <select name="actors" id="actors" onchange="selectActors(this.id)">
+            <option value="">Select an actor</option>
+            <option value="Robert Downey Jr.">Robert Downey Jr.</option>
+            <option value="Chris Evans">Chris Evans</option>
+            <option value="Chris Hemsworth">Chris Hemsworth</option>
+            <option value="Mark Ruffalo">Mark Ruffalo</option>
+            <option value="Benedict Cumberbatch">Benedict Cumberbatch</option>
+            <option value="Chadwick Boseman">Chadwick Boseman</option>
+            <option value="Tom Holland">Tom Holland</option>
+            <option value="Zoe Saldana">Zoe Saldaña</option>
+            <option value="Dave Bautista">Dave Bautista</option>
+            <option value="Chris Pratt">Chris Pratt</option>
+            <option value="Vin Diesel">Vin Diesel</option>
+            <option value="Paul Rudd">Paul Rudd</option>
+            <option value="Evangeline Lilly">Evangeline Lilly</option>
+            <option value="Brie Larson">Brie Larson</option>
+            <option value="Jude Law">Jude Law</option>
         </select>
-        <div id="moviesDiv"></div>
+        <div id="moviesDiv"> </div>
     </div>
 
     <script src="main.js"></script>
