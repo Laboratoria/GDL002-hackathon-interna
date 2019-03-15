@@ -1,3 +1,5 @@
+window.onload = displayAllMovies;
+
 const urlVideos = [
     ['tt0458339', 'https://www.youtube.com/embed/mGqYQog6biY'],
     ['tt4154664', 'https://www.youtube.com/embed/Z1BCujX3pw8'],
@@ -99,7 +101,7 @@ const removeChild = (parent) => {
         parentElement.removeChild(parentElement.firstChild);
     };
 }
-const url = "http://www.omdbapi.com/?apikey="
+const url = "https://www.omdbapi.com/?apikey="
 const apikey = "8f24c86a&";
 const movies = [
     "t=captain+america&y=2011",
@@ -256,7 +258,6 @@ window.onclick = (event) => {
         modal.style.display = "none";
     }
 };
-window.onload = displayAllMovies;
 document.getElementById("actors").addEventListener("change", selectActor);
 document.getElementById("storyPage").addEventListener("click", () => window.location.href = "story.html");
 document.getElementById("moviesPage").addEventListener("click", () => window.location.href = "index.html");
